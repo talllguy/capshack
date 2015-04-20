@@ -1,0 +1,67 @@
+h2	 {
+	margin: 0; padding: 0; border: 0;
+}
+
+
+h1 {
+	width: 168px; height: 130px; margin: 30px auto; position: relative;
+	 text-indent: -9999px; text-align: center;
+}
+
+#container {
+	width: 940px; margin: -115px auto; padding: 110px 10px 50px 10px;
+
+	box-shadow: 0px 0px 15px #000;
+}
+
+table {
+	border-spacing: 10px 0px;
+	color: #fff;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	text-align: center; padding: 10px;
+}
+
+.feature {
+	width: 183px; text-align: right;
+	font-size: 24px; font-weight: normal; color: #fff;
+	font-family: 'Nunito', sans-serif;
+}
+
+.free, .premium, .platinum {
+	background: rgba(255,255,255,0.05);
+	font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+	font-size: 24px; font-weight: normal; color: #fff;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+tr:hover {
+	background: rgba(255,255,255,0.05);
+}
+
+thead tr:hover {
+		background: none;
+	}
+
+.csfeatures h2{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Nunito', sans-serif;
+	font-size: 26px;
+}
+
+label {
+    cursor: default;
+		font-family: 'Nunito', sans-serif;
+		font-color: white;
+		background-color: rgba(255, 255, 255, 0.2);
+}

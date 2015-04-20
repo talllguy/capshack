@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="site.css"
+	</head>
+
+	<body>
+		<div class ="nav">
+			<div class="container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Draft Room</a></li>
+					<li><a href="#">Contracts</a></li>
+					<li><a href="#">My Team</a></li>
+					<li><a href="#">My Account</a></li>
+				</ul>
+			</div>
+		</div>
