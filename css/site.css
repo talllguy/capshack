@@ -16,10 +16,6 @@ a:hover, a:active  {
 body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
-  background-image: url('../img/newbackground.jpeg');
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 form {
@@ -170,7 +166,7 @@ label.light {
     margin-left: 50px;
     font-family: 'Nunito', sans-serif;
     font-size: 16pt;
-	
+
 }
 
 .nav li {
@@ -226,4 +222,3 @@ label.light {
   form {
     max-width: 480px;
   }
-
