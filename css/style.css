@@ -1,1 +1,5 @@
 body { padding-top: 70px; }
+
+.form-inline > * {
+   margin:10px 3px;
+}
