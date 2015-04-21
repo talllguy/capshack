@@ -1,104 +1,674 @@
 <!DOCTYPE html>
-<html>
-	<head>
-			<title>CAPSHACK | My Account</title>
-			<link rel="stylesheet" type="text/css" href="css/site.css">
-			<link rel="stylesheet" href="css/normalize.css">
-			<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-			<link href="css/960.css" type="text/css" rel="stylesheet"/>
-			<link href="css/mystylesheet.css" rel="stylesheet" type="text/css"/>
-			<link rel="icon" href="img/favicon.jpg" type="image/jpg" sizes="16x16">
-	</head>
-	<body>
-			<div class = "upperfunction">
-				<div class = "container">
-					<ul>
-					<li><a href="index.html">Log out</a></li>
-					<li><a href="draftroom.html">Draft Room</a></li>
-					<li><a href="contracts.html">Contracts</a></li>
-					<li><a href="myteam.html">My Team</a></li>
-					<li><a href="myaccount.html">My Account</a></li>
-				</ul>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CAPSHACK | Contracts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+      <nav class="navbar navbar-default navbar-fixed-top"  role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="home" href="login.html" title="Capshack">
+                <img style="max-width:100px; margin-top: -7px;"
+                     src="img/logo-horizontal.png">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active">
+  							<a href="#">Contracts</a>
+  						</li>
+  						<li>
+  							<a href="myteam.html">My Teams</a>
+  						</li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+  							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<strong class="caret"></strong></a>
+  							<ul class="dropdown-menu">
+  								<li>
+  									<a href="draftroom.html">Draft Room</a>
+  								</li>
+  								<li>
+  									<a href="#">Support</a>
+  								</li>
+  								<li>
+  									<a href="myaccount">My Account</a>
+  								</li>
+  								<li class="divider">
+  								</li>
+  								<li>
+  									<a href="index.html">Log Out</a>
+  								</li>
+  							</ul>
+  						</li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+			<div class="page-header">
+				<h1>
+					Manage My Account
+				</h1>
+			</div>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<div class="tabbable" id="tabs-102638">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a href="#panel-545382" data-toggle="tab">My Account Details</a>
+								</li>
+								<li>
+									<a href="#panel-223127" data-toggle="tab">Account Management</a>
+								</li>
+								<li>
+									<a href="#panel-223128" data-toggle="tab">Edit Basic Information</a>
+								</li>
+								<li>
+									<a href="#panel-223129" data-toggle="tab">Payment Information</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="panel-545382">
+									<form class="form-inline">
+										<fieldset>
+
+										<!-- Form Name -->
+										<legend>Username / Password</legend>
+
+										<!-- Text input-->
+										<div class="form-group">
+											<label for="textinput">Username</label>
+											<input id="textinput" name="textinput" type="text" placeholder="capshackuser@gmail.com" class="form-control input-md">
+										</div>
+										<div class="form-group">
+											<a class="btn btn-success" href="#profile">Edit
+											</a>
+										</div>
+
+										</fieldset>
+										<fieldset>
+											<div class="form-group">
+												<label for="textinput">Password</label>
+												<input id="password" name="textinput" type="password" placeholder="password" class="form-control input-md">
+											</div>
+											<div class="form-group">
+												<a class="btn btn-success" href="#profile">Edit
+												</a>
+											</div>
+										</fieldset>
+										</form>
+										<h3>Personal Information</h3>
+										<div class="container">
+											<table class="table">
+												<tr>
+												<td>First Name</td>
+												<td>Capscak User</td>
+												</tr>
+												<tr>
+												<td>Last Name</td>
+												<td>Last Capsack</td>
+												</tr>
+												<tr>
+												<td>Street Number</td>
+												<td>555</td>
+												</tr>
+												<tr>
+												<td>Street Name</td>
+												<td>Capscak</td>
+												</tr>
+												<tr>
+												<td>Street type</td>
+												<td>Lane</td>
+												</tr>
+												<tr>
+												<td>City</td>
+												<td>Baltimore</td>
+												</tr>
+												<tr>
+												<td>State</td>
+												<td>MD</td>
+												</tr>
+												<tr>
+												<td>Zip Code</td>
+												<td>21218</td>
+												</tr>
+												<tr>
+												<td>Telephone Number</td>
+												<td>555 555 5555</td>
+												</tr>
+											</table>
+										</div>
+								</div>
+								<div class="tab-pane" id="panel-223127">
+												<h3>Change Password <span class="extra-title muted"></span></h3>
+
+										<div class="modal-body form-horizontal">
+												<div class="control-group">
+														<label for="current_password" class="control-label">Current Password</label>
+														<div class="controls">
+																<input type="password" name="current_password">
+														</div>
+												</div>
+												<div class="control-group">
+														<label for="new_password" class="control-label">New Password</label>
+														<div class="controls">
+																<input type="password" name="new_password">
+														</div>
+												</div>
+												<div class="control-group">
+														<label for="confirm_password" class="control-label">Confirm Password</label>
+														<div class="controls">
+																<input type="password" name="confirm_password">
+														</div>
+												</div>
+											</div>
+										<div class="modal-footer">
+												<button href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+												<button href="#" class="btn btn-primary" id="password_modal_save">Save changes</button>
+										</div>
+										<div class="panel">
+											<div class="panel-body">
+											  <label for="singlebutton">Change Username</label>
+											  <div class="form-group">
+													<a class="btn btn-default" href="#">Change</a>
+												</div>
+											</div>
+										</div>
+										<div class="well">
+											<div class="panel-heading">Danger Zone!</div>
+											<div class="panel-body">
+											  <label for="singlebutton">Delete My Account</label>
+											  <div class="form-group">
+													<a class="btn btn-danger" href="index.html">Delete</a>
+												</div>
+											</div>
+										</div>
+								</div>
+								<div class="tab-pane" id="panel-223128">
+									<h3>Basic information</h3>
+									<div class="row clearfix">
+										<div class="col-md-6 column">
+											<form class="form-horizontal">
+												<fieldset>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">First Name</label>
+													<div class="col-md-4">
+													<input id="textinput" name="textinput" type="text" placeholder="First Name" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">Address Number</label>
+													<div class="col-md-2">
+													<input id="textinput" name="textinput" type="text" placeholder="#" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Select Basic -->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="selectbasic">Street Type</label>
+													<div class="col-md-4">
+														<select id="selectbasic" name="selectbasic" class="form-control">
+															<option value="1">Alley</option>
+															<option value="2">Anex</option>
+															<option value="">Arcade</option>
+															<option value="">Avenue</option>
+															<option value="">Bayou</option>
+															<option value="">Beach</option>
+															<option value="">Bend</option>
+															<option value="">Bluff</option>
+															<option value="">Bluffs</option>
+															<option value="">Bottom</option>
+															<option value="">Boulevard</option>
+															<option value="">Branch</option>
+															<option value="">Bridge</option>
+															<option value="">Brook</option>
+															<option value="">Brooks</option>
+															<option value="">Burg</option>
+															<option value="">Burgs</option>
+															<option value="">Bypass</option>
+															<option value="">Camp</option>
+															<option value="">Canyon</option>
+															<option value="">Cape</option>
+															<option value="">Causeway</option>
+															<option value="">Center</option>
+															<option value="">Centers</option>
+															<option value="">Circle</option>
+															<option value="">Circles</option>
+															<option value="">Cliff</option>
+															<option value="">Cliffs</option>
+															<option value="">Club</option>
+															<option value="">Common</option>
+															<option value="">Commons</option>
+															<option value="">Corner</option>
+															<option value="">Corners</option>
+															<option value="">Course</option>
+															<option value="">Court</option>
+															<option value="">Courts</option>
+															<option value="">Cove</option>
+															<option value="">Coves</option>
+															<option value="">Creek</option>
+															<option value="">Crescent</option>
+															<option value="">Crest</option>
+															<option value="">Crossing</option>
+															<option value="">Crossroad</option>
+															<option value="">Crossroads</option>
+															<option value="">Curve</option>
+															<option value="">Dale</option>
+															<option value="">Dam</option>
+															<option value="">Divide</option>
+															<option value="">Drive</option>
+															<option value="">Drives</option>
+															<option value="">Estate</option>
+															<option value="">Estates</option>
+															<option value="">Expressway</option>
+															<option value="">Extension</option>
+															<option value="">Extensions</option>
+															<option value="">Fall</option>
+															<option value="">Falls</option>
+															<option value="">Ferry</option>
+															<option value="">Field</option>
+															<option value="">Fields</option>
+															<option value="">Flat</option>
+															<option value="">Flats</option>
+															<option value="">Ford</option>
+															<option value="">Fords</option>
+															<option value="">Forest</option>
+															<option value="">Forge</option>
+															<option value="">Forges</option>
+															<option value="">Fork</option>
+															<option value="">Forks</option>
+															<option value="">Fort</option>
+															<option value="">Freeway</option>
+															<option value="">Garden</option>
+															<option value="">Gardens</option>
+															<option value="">Gateway</option>
+															<option value="">Glen</option>
+															<option value="">Glens</option>
+															<option value="">Green</option>
+															<option value="">Greens</option>
+															<option value="">Grove</option>
+															<option value="">Groves</option>
+															<option value="">Harbor</option>
+															<option value="">Harbors</option>
+															<option value="">Haven</option>
+															<option value="">Heights</option>
+															<option value="">Highway</option>
+															<option value="">Hill</option>
+															<option value="">Hills</option>
+															<option value="">Hollow</option>
+															<option value="">Inlet</option>
+															<option value="">Island</option>
+															<option value="">Islands</option>
+															<option value="">Isle</option>
+															<option value="">Junction</option>
+															<option value="">Junctions</option>
+															<option value="">Key</option>
+															<option value="">Keys</option>
+															<option value="">Knoll</option>
+															<option value="">Knolls</option>
+															<option value="">Lake</option>
+															<option value="">Lakes</option>
+															<option value="">Land</option>
+															<option value="">Landing</option>
+															<option value="">Lane</option>
+															<option value="">Light</option>
+															<option value="">Lights</option>
+															<option value="">Loaf</option>
+															<option value="">Lock</option>
+															<option value="">Locks</option>
+															<option value="">Lodge</option>
+															<option value="">Loop</option>
+															<option value="">Mall</option>
+															<option value="">Manor</option>
+															<option value="">Manors</option>
+															<option value="">Meadow</option>
+															<option value="">Meadows</option>
+															<option value="">Mews</option>
+															<option value="">Mill</option>
+															<option value="">Mills</option>
+															<option value="">Mission</option>
+															<option value="">Motorway</option>
+															<option value="">Mount</option>
+															<option value="">Mountain</option>
+															<option value="">Mountains</option>
+															<option value="">Neck</option>
+															<option value="">Orchard</option>
+															<option value="">Oval</option>
+															<option value="">Overpass</option>
+															<option value="">Park</option>
+															<option value="">Parks</option>
+															<option value="">Parkway</option>
+															<option value="">Parkways</option>
+															<option value="">Pass</option>
+															<option value="">Passage</option>
+															<option value="">Path</option>
+															<option value="">Pike</option>
+															<option value="">Pine</option>
+															<option value="">Pines</option>
+															<option value="">Place</option>
+															<option value="">Plain</option>
+															<option value="">Plains</option>
+															<option value="">Plaza</option>
+															<option value="">Point</option>
+															<option value="">Points</option>
+															<option value="">Port</option>
+															<option value="">Ports</option>
+															<option value="">Prairie</option>
+															<option value="">Radial</option>
+															<option value="">Ramp</option>
+															<option value="">Ranch</option>
+															<option value="">Rapid</option>
+															<option value="">Rapids</option>
+															<option value="">Rest</option>
+															<option value="">Ridge</option>
+															<option value="">Ridges</option>
+															<option value="">River</option>
+															<option value="">Road</option>
+															<option value="">Roads</option>
+															<option value="">Route</option>
+															<option value="">Row</option>
+															<option value="">Rue</option>
+															<option value="">Run</option>
+															<option value="">Shoal</option>
+															<option value="">Shoals</option>
+															<option value="">Shore</option>
+															<option value="">Shores</option>
+															<option value="">Skyway</option>
+															<option value="">Spring</option>
+															<option value="">Springs</option>
+															<option value="">Spur</option>
+															<option value="">Spurs</option>
+															<option value="">Square</option>
+															<option value="">Squares</option>
+															<option value="">Station</option>
+															<option value="">Stravenue</option>
+															<option value="">Stream</option>
+															<option value="">Street</option>
+															<option value="">Streets</option>
+															<option value="">Summit</option>
+															<option value="">Terrace</option>
+															<option value="">Throughway</option>
+															<option value="">Trace</option>
+															<option value="">Track</option>
+															<option value="">Trafficway</option>
+															<option value="">Trail</option>
+															<option value="">Trailer</option>
+															<option value="">Tunnel</option>
+															<option value="">Turnpike</option>
+															<option value="">Underpass</option>
+															<option value="">Union</option>
+															<option value="">Unions</option>
+															<option value="">Valley</option>
+															<option value="">Valleys</option>
+															<option value="">Viaduct</option>
+															<option value="">View</option>
+															<option value="">Views</option>
+															<option value="">Village</option>
+															<option value="">Villages</option>
+															<option value="">Ville</option>
+															<option value="">Vista</option>
+															<option value="">Walk</option>
+															<option value="">Walks</option>
+															<option value="">Wall</option>
+															<option value="">Way</option>
+															<option value="">Ways</option>
+															<option value="">Well</option>
+															<option value="">Wells</option>
+														</select>
+													</div>
+												</div>
+
+												<!-- Select Basic -->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="selectbasic">State</label>
+													<div class="col-md-4">
+														<select id="selectbasic" name="selectbasic" class="form-control">
+															<option value="1">Alabama</option>
+															<option value="2">Alaska</option>
+															<option value="">Arizona</option>
+															<option value="">Arkansas</option>
+															<option value="">California</option>
+															<option value="">Colorado</option>
+															<option value="">Connecticut</option>
+															<option value="">Delaware</option>
+															<option value="">Florida</option>
+															<option value="">Georgia</option>
+															<option value="">Hawaii</option>
+															<option value="">Idaho</option>
+															<option value="">Illinois</option>
+															<option value="">Indiana</option>
+															<option value="">Iowa</option>
+															<option value="">Kansas</option>
+															<option value="">Kentucky</option>
+															<option value="">Louisiana</option>
+															<option value="">Maine</option>
+															<option value="">Maryland</option>
+															<option value="">Massachusetts</option>
+															<option value="">Michigan</option>
+															<option value="">Minnesota</option>
+															<option value="">Mississippi</option>
+															<option value="">Missouri</option>
+															<option value="">Montana</option>
+															<option value="">Nebraska</option>
+															<option value="">Nevada</option>
+															<option value="">New Hampshire</option>
+															<option value="">New Jersey</option>
+															<option value="">New Mexico</option>
+															<option value="">New York</option>
+															<option value="">North Carolina</option>
+															<option value="">North Dakota</option>
+															<option value="">Ohio</option>
+															<option value="">Oklahoma</option>
+															<option value="">Oregon</option>
+															<option value="">Pennsylvania</option>
+															<option value="">Rhode Island</option>
+															<option value="">South Carolina</option>
+															<option value="">South Dakota</option>
+															<option value="">Tennessee</option>
+															<option value="">Texas</option>
+															<option value="">Utah</option>
+															<option value="">Vermont</option>
+															<option value="">Virginia</option>
+															<option value="">Washington</option>
+															<option value="">West Virginia</option>
+															<option value="">Wisconsin</option>
+															<option value="">Wyoming</option>
+														</select>
+													</div>
+												</div>
+
+												</fieldset>
+												</form>
+
+
+										</div>
+										<div class="col-md-6 column">
+											<form class="form-horizontal">
+												<fieldset>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">Last Name</label>
+													<div class="col-md-4">
+													<input id="textinput" name="textinput" type="text" placeholder="last name" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">Street Name</label>
+													<div class="col-md-4">
+													<input id="textinput" name="textinput" type="text" placeholder="street name" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">City</label>
+													<div class="col-md-4">
+													<input id="textinput" name="textinput" type="text" placeholder="city" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Text input-->
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="textinput">ZIP Code</label>
+													<div class="col-md-4">
+													<input id="textinput" name="textinput" type="text" placeholder="zip code" class="form-control input-md">
+
+													</div>
+												</div>
+
+												<!-- Button -->
+
+												<div class="form-group">
+													<label class="col-md-4 control-label" for="singlebutton">Done</label>
+													<div class="col-md-4">
+														<a href="home.html" class="btn btn-primary" role="button">Save</a>
+													</div>
+												</div>
+
+												</fieldset>
+												</form>
+
+										</div>
+									</div>
+
+								</div>
+								<div class="tab-pane" id="panel-223129">
+									<h3>Edit Payment Info</h3>
+									<div class="container">
+						        <form class="form-horizontal" role="form">
+						          <fieldset>
+						            <div class="form-group">
+						              <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
+						              <div class="col-sm-9">
+						                <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+						              </div>
+						            </div>
+						            <div class="form-group">
+						              <label class="col-sm-3 control-label" for="card-number">Card Number</label>
+						              <div class="col-sm-9">
+						                <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Debit/Credit Card Number">
+						              </div>
+						            </div>
+						            <div class="form-group">
+						              <label class="col-sm-3 control-label" for="expiry-month">Expiration Date</label>
+						              <div class="col-sm-9">
+						                <div class="row">
+						                  <div class="col-xs-3">
+						                    <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+						                      <option>Month</option>
+						                      <option value="01">Jan (01)</option>
+						                      <option value="02">Feb (02)</option>
+						                      <option value="03">Mar (03)</option>
+						                      <option value="04">Apr (04)</option>
+						                      <option value="05">May (05)</option>
+						                      <option value="06">June (06)</option>
+						                      <option value="07">July (07)</option>
+						                      <option value="08">Aug (08)</option>
+						                      <option value="09">Sep (09)</option>
+						                      <option value="10">Oct (10)</option>
+						                      <option value="11">Nov (11)</option>
+						                      <option value="12">Dec (12)</option>
+						                    </select>
+						                  </div>
+						                  <div class="col-xs-3">
+						                    <select class="form-control" name="expiry-year">
+						                      <option value="13">2013</option>
+						                      <option value="14">2014</option>
+						                      <option value="15">2015</option>
+						                      <option value="16">2016</option>
+						                      <option value="17">2017</option>
+						                      <option value="18">2018</option>
+						                      <option value="19">2019</option>
+						                      <option value="20">2020</option>
+						                      <option value="21">2021</option>
+						                      <option value="22">2022</option>
+						                      <option value="23">2023</option>
+						                    </select>
+						                  </div>
+						                </div>
+						              </div>
+						            </div>
+						            <div class="form-group">
+						              <label class="col-sm-3 control-label" for="cvv">Card CVV</label>
+						              <div class="col-sm-3">
+						                <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+						              </div>
+						            </div>
+						            <div class="form-group">
+						              <div class="col-sm-offset-3 col-sm-9">
+						                <a class="btn btn-success" href="home.html">Save</a>
+						              </div>
+						            </div>
+						          </fieldset>
+						        </form>
+						      </div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="accountlogo">
-				<a href="index.html">
-				<img src="img/coollogo_com-24987259.png" alt="capshack logo picture"/> </a>
-			</div>
-<div id="nav1" class="container_12">
-	<div class="grid_3"><!--THis is going to be a navigation insied the account page -->
-		<a href="myaccount.html">My Account Details</a>
-	</div>
-	<div class="grid_3">
-	<a href="accountmanag.html">Account Management</a>
-	</div>
-	<div class="grid_3">
-	<a href="accountbasicinfo.html">Edit Basic Information</a>
-	</div>
-	<div class="grid_3">
-	<a href="accountpayment.html">Payment Information</a>
 	</div>
 </div>
-<div id="basicinfo" class="container_12">
-	<div class="grid_12">
-		<h1>My Profile</h1>
-		<hr>
-		<p>Username/email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; capshackuser@gmail.com <a href="accountmanag.html">Edit</a></p>
-		<p>Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(not shown) <a href="accountmanag.html">Edit</a></p>
-		<hr>
-	<h2>Contact Information &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="accountbasicinfo.html">Edit</a></p> </h2>
-	<table>
-		<tr>
-		<td>First Name</td>
-		<td>Capscak User</td>
-		</tr>
-		<tr>
-		<td>Last Name</td>
-		<td>Last Capsack</td>
-		</tr>
-		<tr>
-		<td>Street Number</td>
-		<td>555</td>
-		</tr>
-		<tr>
-		<td>Street Name</td>
-		<td>Capscak</td>
-		</tr>
-		<tr>
-		<td>Street type</td>
-		<td>Lane</td>
-		</tr>
-		<tr>
-		<td>City</td>
-		<td>Baltimore</td>
-		</tr>
-		<tr>
-		<td>State</td>
-		<td>MD</td>
-		</tr>
-		<tr>
-		<td>Zip Code</td>
-		<td>21218</td>
-		</tr>
-		<tr>
-		<td>Telephone Number</td>
-		<td>555 555 5555</td>
-		</tr>
-	</table>
-	<hr>
-	<ul>
-	<li><a href="accountmanag.html">Account Management</a></li>
-	<br/>
-	<li><a href="accountbasicinfo.html">Edit Basic Information</a></li>
-	<br/>
-	<li><a href="accountmanag.html">Payment Information</a></li>
-	<br/>
-	</ul>
-	<br/>
-	<br/>
-	<div>
-
-</div>
-
-	</body>
+</body>
 </html>
